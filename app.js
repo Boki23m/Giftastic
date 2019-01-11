@@ -1,6 +1,6 @@
 // Array of animals
-var animalList = ["dog", "cat", "rabbit", "hamster", "mouse", "skunk", "goldfish", "whale", "shark", "monkey", "snake",
-    "frog", "teacup pig", "chicken", "chinchilla", "bird", "turtle", "horse", "pygmy goat", "ostrich", "tiger", "sheep", "donkey"];
+var animalList = ["dog", "cat", "rabbit", "hamster", "skunk", "goldfish", "whale", "shark", "monkey", "snake",
+    "frog", "teacup pig", "chicken", "chinchilla", "bird", "turtle", "pygmy goat", "ostrich", "tiger", "sheep", "donkey"];
 
 // This code will run as soon as the page loads
 window.onload = function () {
@@ -40,7 +40,7 @@ $('#animalButtons').on('click', 'button', function () {
             // Looping over every result item
             for (var i = 0; i < results.length; i++) {
                 // Creating and storing a div tag
-                var animalDiv = $("<div>");
+                var animalDiv = $("<div class='gif'>");
 
                 // Creating a paragraph tag with the result item's rating
                 var p = $("<p>").text("Rating: " + results[i].rating);
@@ -48,7 +48,7 @@ $('#animalButtons').on('click', 'button', function () {
                 // Creating and storing an image tag
                 var animalImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
-                animalImage.attr("src", results[i].images.fixed_height.url);
+                animalImage.attr("src", results[i].images.fixed_height_still.url);
 
                 // Appending the paragraph and image tag to the animalDiv
                 animalDiv.append(p);

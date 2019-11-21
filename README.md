@@ -6,3 +6,5 @@ When the user clicks one of the still GIPHY images, the gif should animate. If t
 Under every gif is displayed its rating (This data is provided by the GIPHY API).
 
 Link to GitHub page: https://boki23m.github.io/Giftastic/
+
+![screenshot](img/Capture.JPG)
